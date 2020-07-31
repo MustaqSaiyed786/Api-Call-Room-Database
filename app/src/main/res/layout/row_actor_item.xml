@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="#FFFFFF"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="10dp"
+    app:cardMaxElevation="10dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgActor"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="5dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvActorName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@id/imgActor"
+            android:layout_toRightOf="@id/imgActor"
+            android:textColor="#000000"
+            android:padding="10dp"
+            android:textSize="20sp"
+            tools:text="Actor Name" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvActorAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvActorName"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@id/imgActor"
+            android:layout_toRightOf="@id/imgActor"
+            android:padding="8dp"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            tools:text="001" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvActorId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvActorAge"
+            android:padding="8dp"
+            android:layout_alignStart="@id/tvActorAge"
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="10dp"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            tools:text="001"
+            android:layout_alignLeft="@id/tvActorAge"
+            android:layout_marginRight="10dp" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
